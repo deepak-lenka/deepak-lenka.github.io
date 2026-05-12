@@ -1,0 +1,201 @@
+:root {
+  --text: #111111;
+  --link: #2f76d2;
+  --rule: #d7d7d7;
+  --muted: #333333;
+  --thumb: #f4f4f4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: min(100% - 36px, 1120px);
+  margin: 0 auto;
+  padding: 44px 0 70px;
+}
+
+h1 {
+  margin: 0 0 42px;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  gap: 54px;
+  align-items: start;
+}
+
+.left-column {
+  text-align: center;
+}
+
+.portrait {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  aspect-ratio: 1;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.links {
+  margin: 20px 0 0;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.right-column p {
+  margin: 0 0 20px;
+}
+
+hr {
+  height: 1px;
+  margin: 36px 0 28px;
+  border: 0;
+  background: var(--rule);
+}
+
+.section h2 {
+  margin: 0 0 18px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+ul {
+  margin: 0;
+  padding-left: 26px;
+}
+
+li {
+  margin: 0 0 8px;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 178px minmax(0, 1fr);
+  gap: 22px;
+  margin: 0 0 30px;
+}
+
+.project:last-child {
+  margin-bottom: 0;
+}
+
+.thumb {
+  display: flex;
+  width: 178px;
+  height: 122px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dedede;
+  border-radius: 6px;
+  background: var(--thumb);
+  color: #555555;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.project h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.28;
+}
+
+.project p {
+  margin: 4px 0;
+}
+
+.authors,
+.venue {
+  color: var(--muted);
+}
+
+.venue {
+  font-style: italic;
+}
+
+.project-links {
+  font-size: 17px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 780px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    width: min(100% - 28px, 680px);
+    padding-top: 30px;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+    font-size: 34px;
+  }
+
+  .intro,
+  .project {
+    grid-template-columns: 1fr;
+  }
+
+  .intro {
+    gap: 26px;
+  }
+
+  .portrait {
+    width: min(76vw, 300px);
+    margin: 0 auto;
+  }
+
+  .project {
+    gap: 12px;
+  }
+
+  .thumb {
+    width: min(100%, 260px);
+    height: 116px;
+  }
+
+  .section h2 {
+    font-size: 25px;
+  }
+}
