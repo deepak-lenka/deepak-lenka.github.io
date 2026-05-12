@@ -29,13 +29,13 @@ a:hover {
 }
 
 .container {
-  width: min(100% - 36px, 1120px);
+  width: min(100% - 36px, 980px);
   margin: 0 auto;
-  padding: 44px 0 70px;
+  padding: 54px 0 70px;
 }
 
 h1 {
-  margin: 0 0 42px;
+  margin: 0 0 48px;
   text-align: center;
   font-size: 42px;
   font-weight: 500;
@@ -45,8 +45,8 @@ h1 {
 
 .intro {
   display: grid;
-  grid-template-columns: 300px minmax(0, 1fr);
-  gap: 54px;
+  grid-template-columns: 290px minmax(0, 1fr);
+  gap: 52px;
   align-items: start;
 }
 
@@ -56,7 +56,7 @@ h1 {
 
 .portrait {
   display: block;
-  width: 300px;
+  width: 290px;
   max-width: 100%;
   aspect-ratio: 1;
   border-radius: 14px;
@@ -101,7 +101,7 @@ h1 {
 
 hr {
   height: 1px;
-  margin: 36px 0 28px;
+  margin: 36px 0 30px;
   border: 0;
   background: var(--rule);
 }
