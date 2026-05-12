@@ -69,6 +69,32 @@ h1 {
   line-height: 1.55;
 }
 
+.follow-pill {
+  display: inline-flex;
+  min-height: 32px;
+  margin-top: 8px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 999px;
+  padding: 4px 18px;
+  background: #000000;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.follow-pill:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.follow-pill span {
+  font-size: 18px;
+  font-weight: 400;
+}
+
 .right-column p {
   margin: 0 0 20px;
 }
