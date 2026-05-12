@@ -209,8 +209,12 @@ li {
 
   h1 {
     margin-bottom: 30px;
-    font-size: 34px;
-    column-gap: 14px;
+    font-size: clamp(25px, 8vw, 34px);
+    column-gap: 10px;
+  }
+
+  .native-name {
+    font-size: 0.74em;
   }
 
   .intro,
